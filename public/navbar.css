@@ -34,6 +34,7 @@ body {
     -moz-border-radius: 2px;
     -o-border-radius: 2px;
     margin-bottom: 0;
+    padding-bottom: 0px;
 }
 
 .jumbotron h1 {
@@ -49,8 +50,13 @@ body {
     font-size: 3em;
     text-transform: uppercase;
     letter-spacing: .05em;
-    padding: 0 0 0 47%;
+    padding: 0 0 0 64%;
     margin-top: 0;
+}
+
+.jumbotron img {
+
+
 }
 
 #navbar, .navbar-header{
@@ -174,6 +180,21 @@ aside h2 {
 .hvr-float:hover, .hvr-float:focus, .hvr-float:active {
   -webkit-transform: translateY(-8px);
   transform: translateY(-8px);
+}
+
+@media (max-width: 412px) {
+    .jumbotron h1 {
+        margin: 0;
+        font-size: 4.5em;
+    }
+
+    .jumbotron h2 {
+        padding: 0;
+    }
+
+    .jumbotron img {
+        padding: 0 0 0 45px;
+    }
 }
 
 
