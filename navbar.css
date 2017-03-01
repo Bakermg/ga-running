@@ -24,15 +24,16 @@ body {
 }
 
 .container .jumbotron {
-    background: #407F80;
+    background: #488187;
     background: linear-gradient(#488187, #68B0B4);
     background: -webkit-linear-gradient(#488187, #68B0B4);
     background: -o-linear-gradient(#488187, #68B0B4);
     background: -moz-linear-gradient(#488187, #68B0B4);
     border-radius: 2px;
-    width: 100%;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
     margin-bottom: 0;
-
 }
 
 .jumbotron h1 {
@@ -40,7 +41,7 @@ body {
     text-transform: uppercase;
     color: #F4F4E5;
     letter-spacing: .05em;
-    margin: 0;
+    margin: -40px 0 0 -40px;
 }
 
 .jumbotron h2 {
@@ -48,18 +49,28 @@ body {
     font-size: 3em;
     text-transform: uppercase;
     letter-spacing: .05em;
-    padding: 0 0 0 40%;
+    padding: 0 0 0 47%;
     margin-top: 0;
 }
 
-#navbar {
-	background: #E9BC61;
-    background: linear-gradient(#DEBB5D, #E9BC61);
-    background: -webkit-linear-gradient(#DEBB5D, #E9BC61);
-    background: -o-linear-gradient(#DEBB5D, #E9BC61);
-    background: -moz-linear-gradient(#DEBB5D, #E9BC61);
+#navbar, .navbar-header{
+	background: #E7B35C;
+    background: linear-gradient(#DEBB5D, #E7B35C);
+    background: -webkit-linear-gradient(#DEBB5D, #E7B35C);
+    background: -o-linear-gradient(#DEBB5D, #E7B35C);
+    background: -moz-linear-gradient(#DEBB5D, #E7B35C);
     margin: 0;
 
+}
+.navbar-toggle {
+    background: #407F80;
+    border-radius: 18px;
+}
+.navbar-default .navbar-toggle:hover {
+    background: #68B0B4;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #D7782D;
 }
 
 #navbar ul li a {
@@ -75,8 +86,8 @@ body {
 }
 
 ul li a {
-	background: #E5BB6F;
     font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(38, 90, 103, 1);
 }
 
 .main article {
@@ -122,7 +133,7 @@ ul li a {
 aside h2 {
     color: #A86421;
     font-size: 2.5em;
-    font-family: 'Aguafina Script', cursive;
+    font-family: 'Yellowtail', cursive;
     line-height: 1.3em;
     letter-spacing: .02em;
     font-weight: 500;
@@ -146,6 +157,24 @@ aside h2 {
     *zoom: 1;
 }
 
+// hover.css floating nav element
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
 
 
 
