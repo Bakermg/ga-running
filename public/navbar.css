@@ -268,6 +268,11 @@ aside h2 {
 }
 
 @media (max-width: 637px) {
+
+    .main section {
+        padding: 10px;
+    }
+
     .jumbotron h1 {
         margin: 0;
         font-size: 3.5em;
