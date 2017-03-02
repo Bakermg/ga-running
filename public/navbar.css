@@ -40,7 +40,7 @@ body {
     font-size: 5em;
     text-transform: uppercase;
     color: #F4F4E5;
-    letter-spacing: .05em;
+    letter-spacing: .01em;
     margin: -40px 0 0 -40px;
 }
 
@@ -48,7 +48,7 @@ body {
     color: #E9BC61;
     font-size: 3em;
     text-transform: uppercase;
-    letter-spacing: .05em;
+    letter-spacing: .03em;
     margin: 0 0 82px -40px;
 }
 
@@ -95,6 +95,13 @@ body {
     margin-bottom: 35px;
 }
 
+.fixed {
+    top: 0px;
+    z-index: 9999;
+    width: 100%;
+    position: fixed;
+    }
+
 ul li a {
     font-weight: 700;
     text-shadow: 1px 1px 2px rgba(38, 90, 103, 1);
@@ -130,10 +137,13 @@ ul li a {
 
 .main aside {
     float: left;
-    width: 35%;
+    width: 33%;
     background: #EDE3B8;
     padding: 15px;
-    border: 5px solid #D6762C;
+    margin-top: 10px;
+    margin-left: 8px;
+    border: 2px solid #D6762C;
+    outline: 10px solid #EDE3B8;
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -257,8 +267,11 @@ aside h2 {
     }
 
     .main aside {
-        width: 100%;
-        margin: 0 0 10px 0;
+        width: 97%;
+        margin: 0;
+        padding: 10px;
+        margin: 2px 0 25px 10px;
+
     }
 
     .main article {
@@ -269,12 +282,15 @@ aside h2 {
 
 @media (max-width: 637px) {
 
+    body {
+        padding: 0;
+        margin: 0;
+    }
     .main-section {
         padding: 10px;
     }
 
     .jumbotron h1 {
-        margin: 0;
         font-size: 3.5em;
     }
     .jumbotron h2 {
