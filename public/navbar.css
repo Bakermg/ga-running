@@ -50,11 +50,11 @@ body {
     font-size: 3em;
     text-transform: uppercase;
     letter-spacing: .05em;
-    margin: 0 0 0 190px;
+    margin: 0 0 82px -40px;
 }
 
 .run-man {
-    margin-top: 16px;
+    margin: 0;
 }
 .mountian {
     margin-left: -60px;
@@ -185,7 +185,14 @@ aside h2 {
 }
 @media (min-width: 1200px) {
     .jumbotron h2 {
-        margin: 0 0 0 45%;
+        margin: 0 0 55px 45%;
+    }
+    
+}
+
+@media (min-width: 990px) {
+    .jumbotron h2 {
+        margin: 0 0 53px -40px;
     }
 }
 
@@ -196,14 +203,54 @@ aside h2 {
 
     .jumbotron h2 {
         padding: 0;
+    }
 
+    .run-man {
+        margin-left: -25px;
     }
 
     .mountian {
-    margin-top: 28px;
+        margin-top: 28px;
+    }
 
 }
+
+@media  (max-width: 768px) {
+    .jumbotron h1 {
+        margin: -20px 0 0 0;
+    }
+
+    .jumbotron h2 {
+        margin: 0;
+    }
+
+    .run-man {
+        margin-left: -85px
+    }
+
+    .mountian {
+        margin: 61px 0 0 -15px;
+    }
+
+    .hvr-float {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px transparent;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
 }
+    .hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+        -webkit-transform: translateY(-2px);
+        transform: translateY(-2px);
+    }
+}
+
 @media (max-width: 412px) {
     .jumbotron h1 {
         margin: 0;
