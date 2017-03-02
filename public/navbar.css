@@ -104,7 +104,7 @@ body {
 
 ul li a {
     font-weight: 700;
-    text-shadow: 1px 1px 2px rgba(38, 90, 103, 1);
+    text-shadow: 1px 1px 2px rgba(237, 227, 184, 1);
 }
 
 .main article {
@@ -267,9 +267,8 @@ aside h2 {
     }
 
     .main aside {
-        width: 97%;
+        width: 93.5%;
         margin: 0;
-        padding: 10px;
         margin: 2px 0 25px 10px;
 
     }
@@ -299,4 +298,6 @@ aside h2 {
     .run-img {
         display: none;
     }
+@media (max-width: 440px) {
+
 }
