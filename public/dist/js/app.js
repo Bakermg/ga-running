@@ -1,3 +1,4 @@
 $(document).ready(function(){
- $('#myNav').stickThis();
+	//jQuery plugin for sticking nav to the top off the page
+ 	$('#myNav').stickThis();
 });

@@ -128,7 +128,7 @@ ul li a {
     text-transform: uppercase;
     letter-spacing: 0.3em;
     padding: 0;
-    margin-top: 0;
+    margin-top: 5px;
 }
 
 .main article p {
@@ -157,6 +157,9 @@ aside h2 {
     line-height: 1.3em;
     letter-spacing: .02em;
     font-weight: 500;
+}
+aside h3{
+    color: #972504;
 }
 
 .footer {
