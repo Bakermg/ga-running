@@ -127,7 +127,7 @@ ul li a {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.3em;
-    padding: 0;
+    padding: 0 0 10px 0;
     margin-top: 5px;
 }
 
@@ -160,6 +160,32 @@ aside h2 {
 }
 aside h3{
     color: #972504;
+}
+
+
+hr.road {
+  padding: 0;
+  border: none;
+  border-top: solid 5px;
+  text-align: center;
+  max-width: 250px;
+  margin: 25px auto 30px;
+}
+hr.road:after {
+  content: "\f018";
+  font-family: FontAwesome;
+  display: inline-block;
+  position: relative;
+  top: -0.8em;
+  font-size: 2em;
+  padding: 0.15em 0.25em;
+}
+hr.road {
+  border-color: #972504;
+}
+hr.road:after {
+  background-color: #D6772C;
+  color: #972504;
 }
 
 .footer {
@@ -270,7 +296,7 @@ aside h3{
     }
 
     .main aside {
-        width: 93.5%;
+        width: 97%;
         margin: 0;
         margin: 2px 0 25px 10px;
 
@@ -292,6 +318,10 @@ aside h3{
         padding: 10px;
     }
 
+    .main aside {
+        width: 96%;
+    }
+
     .jumbotron h1 {
         font-size: 3.5em;
     }
@@ -301,6 +331,8 @@ aside h3{
     .run-img {
         display: none;
     }
-@media (max-width: 440px) {
-
+@media (max-width: 450px) {
+    .main aside {
+        width: 95%;
+    }
 }
