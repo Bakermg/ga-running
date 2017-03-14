@@ -1,4 +1,17 @@
-$(document).ready(function(){
-	//jQuery plugin for sticking nav to the top off the page
- 	$('#myNav').stickThis();
+$(document).ready(function() {
+    //jQuery plugin for sticking nav to the top off the page
+    $('#myNav').stickThis();
+
+    // active widget
+    $('#an-nyw_1').css({
+    	'width': '90%',
+    	'margin': 'auto',
+    	'margin-top': '5px'
+    });
+    $('.an-nyw-window').css({
+    	'width': '100%',
+    	'margin': 'auto'
+    });
 });
+
+
