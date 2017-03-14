@@ -18,10 +18,7 @@ body {
     padding: 60px 40px;
 }
 
-#navbar {
-    padding: 10px;
-}
-
+/* Jumbotron */
 .container .jumbotron {
     background: #488187;
     background: linear-gradient(#488187, #68B0B4);
@@ -35,7 +32,6 @@ body {
     margin-bottom: 0;
     padding-bottom: 0px;
 }
-
 
 .jumbotron h1 {
     font-size: 5em;
@@ -59,6 +55,11 @@ body {
 
 .mountian {
     margin-left: -60px;
+}
+
+/* Navbar */
+#navbar {
+    padding: 10px;
 }
 
 #navbar,
@@ -87,8 +88,10 @@ body {
 #navbar ul li a {
     font-size: 1.7em;
     text-transform: uppercase;
-    color: #B79957;
+    color: #A86421;
     margin-right: 15px;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(237, 227, 184, 1);
 }
 
 .navbar {
@@ -103,11 +106,12 @@ body {
     position: fixed;
     }
 
-ul li a {
-    font-weight: 700;
-    text-shadow: 1px 1px 2px rgba(237, 227, 184, 1);
-}
+// ul li a {
+//     font-weight: 700;
+//     text-shadow: 1px 1px 2px rgba(237, 227, 184, 1);
+// }
 
+/* Article section */
 .main article {
     float: right;
     width: 36%;
@@ -140,6 +144,7 @@ ul li a {
     padding: 30px 15px 0 15px;
 }
 
+/* Aside section */
 .main aside {
     float: left;
     width: 61%;
@@ -163,6 +168,7 @@ aside h2 {
     letter-spacing: .02em;
     font-weight: 500;
 }
+
 aside h3{
     color: #972504;
 }
@@ -172,7 +178,7 @@ aside h3{
     padding: 10px;
 }
 
-
+/* Font awesome road in aside */
 hr.road {
   padding: 0;
   border: none;
@@ -181,6 +187,7 @@ hr.road {
   max-width: 250px;
   margin: 25px auto 30px;
 }
+
 hr.road:after {
   content: "\f018";
   font-family: FontAwesome;
@@ -190,15 +197,17 @@ hr.road:after {
   font-size: 2em;
   padding: 0.15em 0.25em;
 }
+
 hr.road {
   border-color: #972504;
 }
+
 hr.road:after {
   background-color: #D6772C;
   color: #972504;
 }
 
-
+/* Footer */
 .footer {
     background: #E9BA68;
     margin: 10px 0 0 0;
@@ -246,6 +255,7 @@ hr.road:after {
     transform: translateY(-8px);
 }
 
+/* Media queries */
 @media (min-width: 1200px) {
     .jumbotron h2 {
         margin: 0 0 55px 45%;
