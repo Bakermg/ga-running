@@ -28,18 +28,18 @@
     <div class="container main-section">
         <!-- Main component -->
         <div class="header">
-        <div class="jumbotron">
-            <div class="row">
-                <div class="col-xs-10 col-sm-10">
-                    <h1 class="title">North Georgia</h1>
-                    <h2>Running</h2>
-                    <img class="mountian img-responsive" src="images/mountain-1.png" alt="mountain img">
-                </div>
-                <div class="col-xs-2 col-sm-2 run-img">
-                    <img class="run-man" src="images/run-2.png" alt="photo of comic book man" height="400" width="215">
+            <div class="jumbotron">
+                <div class="row">
+                    <div class="col-xs-10 col-sm-10">
+                        <h1 class="title">North Georgia</h1>
+                        <h2>Running</h2>
+                        <img class="mountian img-responsive" src="images/mountain-1.png" alt="mountain img">
+                    </div>
+                    <div class="col-xs-2 col-sm-2 run-img">
+                        <img class="run-man" src="images/run-2.png" alt="photo of comic book man" height="400" width="215">
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
         <!-- Static navbar -->
         <nav id="myNav" class="navbar navbar-default">
@@ -59,7 +59,6 @@
                 </ul>
             </div>
             <!--/.nav-collapse -->
-
         </nav>
         <div class="main-container">
             <div class="main wrapper clearfix">
@@ -71,9 +70,53 @@
                     <header>
                         <h1>Upcoming Events</h1>
                         <hr class="road">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
+                        <div id="events">
+                            <script type="text/javascript" src="http://widgets.active.com/widgets/nearyou/widget-a3.min.js"></script>
+                            <script type="text/javascript">
+                            new ActiveNetwork.NearYouWidget({
+                                "title": "NEAR YOU",
+                                "num": "10",
+                                "keywords": "running",
+                                "activity": "running",
+                                "showActivitySelector": false,
+                                "type": "event",
+                                "location": "30064",
+                                "showLocationSelector": true,
+                                "affiliate": "",
+                                "placement": "",
+                                "campaign": "150457",
+                                // "width": 394,
+                                // "height": 383,
+                                "style": {
+                                    "frame": {
+                                        "background-color": "#D5772C"
+                                    },
+                                    "title": {
+                                        "color": "#EDE3B8"
+                                    },
+                                    "window": {
+                                        "background-color": "#F7F2E4"
+                                    },
+                                    "text": {
+                                        "color": "#5b5c5c",
+                                        "border-color": "#5b5c5c"
+                                    },
+                                    "links": {
+                                        "color": "#972504"
+                                    },
+                                    "buttons": {
+                                        "background-color": "#972504"
+                                    },
+                                    "tags": {
+                                        "background-color": "#eeeeee"
+                                    }
+                                }
+                            }).render();
+                            </script>
+                        </div>
+                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p> -->
                     </header>
-                    <section>
+                    <!-- <section>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
                     </section>
                     <section>
@@ -81,7 +124,7 @@
                     </section>
                     <footer>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor.</p>
-                    </footer>
+                    </footer> -->
                 </article>
             </div>
             <!-- #main -->
@@ -91,7 +134,6 @@
         <div class="footer clearfix">
             <footer>
                 <div class="col-sm-6">
-
                 </div>
                 <div class="col-sm-6">
                     <span class="fa fa-facebook-square fa-3x" aria-hidden="true"></span>

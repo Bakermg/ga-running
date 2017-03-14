@@ -109,7 +109,7 @@ ul li a {
 
 .main article {
     float: right;
-    width: 62%;
+    width: 36%;
     background: #D8782D;
     background: linear-gradient(#D8782D, #CD762B);
     background: -webkit-linear-gradient(#D8782D, #CD762B);
@@ -119,6 +119,10 @@ ul li a {
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     -o-border-radius: 2px;
+}
+
+.main article {
+    text-align: center;
 }
 
 .main article header h1 {
@@ -137,7 +141,7 @@ ul li a {
 
 .main aside {
     float: left;
-    width: 33%;
+    width: 61%;
     background: #EDE3B8;
     padding: 15px;
     margin-top: 10px;
@@ -186,6 +190,23 @@ hr.road {
 hr.road:after {
   background-color: #D6772C;
   color: #972504;
+}
+
+#events {
+    position: relative;
+    padding: 12px;
+    padding-bottom: 75.25%;
+    // padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+#events script {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .footer {
@@ -241,7 +262,7 @@ hr.road:after {
     }
 }
 
-@media (min-width: 990px) {
+@media (min-width: 991px) {
     .jumbotron h2 {
         margin: 0 0 54px -40px;
     }
