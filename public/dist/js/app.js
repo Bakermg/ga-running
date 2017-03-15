@@ -12,6 +12,13 @@ $(document).ready(function() {
     	'width': '100%',
     	'margin': 'auto'
     });
+
+    // remove the animate classes on mobile views
+    var width = $(window).width();
+    console.log(width);
+    if (width < 767) {
+    	$('li').removeClass('hvr-float');
+    }
 });
 
 
